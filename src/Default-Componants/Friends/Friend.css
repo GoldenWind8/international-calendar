@@ -1,0 +1,10 @@
+.friend {
+    font-size: 2rem;
+    margin-bottom: 2%;
+    border-style: solid;
+}
+
+.friend:hover {
+    background-color: gray;
+    cursor: pointer;
+}

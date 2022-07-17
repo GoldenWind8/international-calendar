@@ -1,0 +1,18 @@
+.header-div {
+    background-color: aqua;
+    font-size: 2rem;
+}
+
+.left-most {
+    margin-left: 20%;
+}
+
+.header-lbl {
+    margin-right: 5%;
+    text-decoration: underline;
+}
+
+.header-lbl:hover {
+    background-color: gray;
+    cursor: pointer;
+}

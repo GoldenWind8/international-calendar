@@ -1,0 +1,43 @@
+.profile {
+    float: left;
+    width: 15%;
+}
+
+.picture {
+    border-radius: 60%;
+    border-style: solid;
+    width: 50%;
+    height: 50%;
+}
+.status {
+    margin-left: 5px;
+}
+.edit-pro:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.status:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+/*
+Status Styles
+*/
+
+.online {
+    color: lime;
+}
+
+.afk {
+    color: orange;
+}
+
+.offile {
+    color: gray;
+}
+
+.dnd {
+    color: red;
+}
