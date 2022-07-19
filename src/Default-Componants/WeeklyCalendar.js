@@ -3,7 +3,7 @@ import FullCalendar, { formatDate } from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timeGridPlugin from '@fullcalendar/timegrid'
 import interactionPlugin from '@fullcalendar/interaction'
-import { INITIAL_EVENTS, createEventId } from './event-utils'
+import { INITIAL_EVENTS, createEventId } from '../event-utils'
 
 
 export default function WeeklyCalendar() {
@@ -22,6 +22,27 @@ export default function WeeklyCalendar() {
             selectMirror={true}
             dayMaxEvents={true}
             initialEvents={INITIAL_EVENTS}
+
+            //Calendar interaction
+            select={handleDateSelect}
         />
     );
+
+
+    function handleDateSelect(selectInfo)  {
+        let title = prompt('Please enter a new title for your event')
+        let calendarApi = selectInfo.view.calendar
+
+        calendarApi.unselect() // clear date selection
+
+        if (title) {
+            calendarApi.addEvent({
+                id: createEventId(),
+                title,
+                start: selectInfo.startStr,
+                end: selectInfo.endStr,
+                allDay: selectInfo.allDay
+            })
+        }
+    }
 }

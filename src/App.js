@@ -1,5 +1,5 @@
 import React from 'react'
-import WeeklyCalendar from './WeeklyCalendar';
+import WeeklyCalendar from './Default-Componants/WeeklyCalendar'
 import Headbar from './Default-Componants/Head-Bar/Headbar'
 import FriendList from './Default-Componants/Friends/Friends-list'
 import Profile from './Default-Componants/Profile/Profile'
