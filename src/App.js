@@ -19,13 +19,15 @@ const friendlist_default = [
     {name: "Harry", id:3},
     {name: "Sashin", id:4},
 ]
+import WeeklyCalendar from './WeeklyCalendar';
+
 
 const activeUser = {username: "CameronCS", status: "Online"}
 
 ///END DEL
 
 //Exporting Componant
-export default function App() {   
+export default function App() {
     //Returning the componant
     return (
         <>
