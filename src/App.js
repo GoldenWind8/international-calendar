@@ -1,16 +1,11 @@
-//React Imports
 import React from 'react'
-
-//Componant import
-/* HeadBar */
+import WeeklyCalendar from './WeeklyCalendar';
 import Headbar from './Default-Componants/Head-Bar/Headbar'
-
-/* Freiend List */
 import FriendList from './Default-Componants/Friends/Friends-list'
 import Profile from './Default-Componants/Profile/Profile'
 
 
-///DEL
+///DEL and replace with database info
 /* General Friend Array */
 const friendlist_default = [
     {name: "James", id:0},
@@ -19,21 +14,18 @@ const friendlist_default = [
     {name: "Harry", id:3},
     {name: "Sashin", id:4},
 ]
-import WeeklyCalendar from './WeeklyCalendar';
-
-
 const activeUser = {username: "CameronCS", status: "Online"}
 
 ///END DEL
 
-//Exporting Componant
 export default function App() {
-    //Returning the componant
     return (
         <>
             <Headbar />
             <FriendList friends={friendlist_default}/>
+
             <Profile user={activeUser}/>
+            <WeeklyCalendar/>
         </>
     )
 }
